@@ -1,55 +1,1667 @@
 {
   "version": "2.1.0",
-  "$schema": "http://json.schemastore.org/sarif-2.1.0-rtm.4",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0-rtm.5.json",
   "runs": [
     {
       "tool": {
         "driver": {
-          "name": "ESLint",
-          "informationUri": "https://eslint.org",
+          "name": "Nightvision Scan",
+          "version": "0.1.0",
+          "informationUri": "https://app.nightvision.net/scans/58810ae7-d54d-4ee4-9325-2d2af66242a5/issues",
           "rules": [
             {
-              "id": "no-unused-vars",
+              "id": "SQL Injection",
+              "name": "SQLInjection",
               "shortDescription": {
-                "text": "disallow unused variables"
+                "text": "Detects potential SQL injection vulnerabilities in web applications"
               },
-              "helpUri": "https://eslint.org/docs/rules/no-unused-vars",
-              "properties": {
-                "category": "Variables"
-              }
+              "helpUri": "https://docs.nightvision.net"
+            },
+            {
+              "id": "Cross Site Scripting (Reflected)",
+              "name": "CrossSiteScripting(Reflected)",
+              "shortDescription": {
+                "text": "Identifies reflected cross-site scripting vulnerabilities in web applications"
+              },
+              "helpUri": "https://docs.nightvision.net"
+            },
+            {
+              "id": "HTTP Only Site",
+              "name": "HTTPOnlySite",
+              "shortDescription": {
+                "text": "Checks if a website has been configured to only use HTTPS instead of HTTP"
+              },
+              "helpUri": "https://docs.nightvision.net"
+            },
+            {
+              "id": ".htaccess Information Leak",
+              "name": ".HtaccessInformationLeak",
+              "shortDescription": {
+                "text": "Looks for potential information leaks in the .htaccess file of a web application"
+              },
+              "helpUri": "https://docs.nightvision.net"
+            },
+            {
+              "id": "HTTP Missing Security Headers",
+              "name": "HTTPMissingSecurityHeaders",
+              "shortDescription": {
+                "text": "Detects when web pages are missing recommended security headers"
+              },
+              "helpUri": "https://docs.nightvision.net"
             }
           ]
         }
       },
-      "artifacts": [
-        {
-          "location": {
-            "uri": "file:///C:/dev/sarif/sarif-tutorials/samples/Introduction/simple-example.js"
-          }
-        }
-      ],
       "results": [
         {
+          "guid": "fe9bfb35-95a6-42e3-9edb-05dc1537ca1f",
+          "ruleId": "SQL Injection",
+          "kind": "fail",
           "level": "error",
           "message": {
-            "text": "'x' is assigned a value but never used."
+            "text": "Potential vulnerability found"
           },
           "locations": [
             {
+              "logicalLocations": [
+                {
+                  "name": "/product.php"
+                }
+              ]
+            },
+            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/dev/sarif/sarif-tutorials/samples/Introduction/simple-example.js",
+                  "uri": "/product.php",
                   "index": 0
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 5
                 }
               }
             }
           ],
-          "ruleId": "no-unused-vars",
-          "ruleIndex": 0
+          "fingerprints": {
+            "nightvisionIssueID": "fe9bfb35-95a6-42e3-9edb-05dc1537ca1f"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "fe063d5f-1605-4810-a08c-b23fe6ad638d",
+          "ruleId": "SQL Injection",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/listproducts.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/listproducts.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "fe063d5f-1605-4810-a08c-b23fe6ad638d"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "47de2265-5e53-4ba2-a79d-2584bcc389d5",
+          "ruleId": "SQL Injection",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/listproducts.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/listproducts.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "47de2265-5e53-4ba2-a79d-2584bcc389d5"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "43de48ab-c9b5-4d41-81ef-e032c761fdff",
+          "ruleId": "SQL Injection",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/artists.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/artists.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "43de48ab-c9b5-4d41-81ef-e032c761fdff"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "44d6a4e9-7890-4b4d-b3cd-52b938d0333c",
+          "ruleId": "SQL Injection",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/userinfo.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/userinfo.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "44d6a4e9-7890-4b4d-b3cd-52b938d0333c"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "22bfab4d-124c-4a98-92eb-e02dd0d7d21d",
+          "ruleId": "SQL Injection",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/userinfo.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/userinfo.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "22bfab4d-124c-4a98-92eb-e02dd0d7d21d"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "9a24698d-a33e-4999-91f1-db3a15c4404b",
+          "ruleId": "SQL Injection",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/secured/newuser.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/secured/newuser.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "9a24698d-a33e-4999-91f1-db3a15c4404b"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "7f588914-bcab-4563-881f-3e8c510f894a",
+          "ruleId": "Cross Site Scripting (Reflected)",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/listproducts.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/listproducts.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "7f588914-bcab-4563-881f-3e8c510f894a"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "d0fbdafc-1bc4-4ff2-b24c-8cb989ae2f04",
+          "ruleId": "Cross Site Scripting (Reflected)",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/listproducts.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/listproducts.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "d0fbdafc-1bc4-4ff2-b24c-8cb989ae2f04"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "cb4ab093-e01c-4648-a937-0b9272e9dec0",
+          "ruleId": "Cross Site Scripting (Reflected)",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/hpp/params.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/hpp/params.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "cb4ab093-e01c-4648-a937-0b9272e9dec0"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "6c854e0f-5051-40d6-8e38-f2bec5999578",
+          "ruleId": "Cross Site Scripting (Reflected)",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/hpp/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/hpp/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "6c854e0f-5051-40d6-8e38-f2bec5999578"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "6bed41fb-bcfe-44c4-941a-675e481652e3",
+          "ruleId": "Cross Site Scripting (Reflected)",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/hpp/params.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/hpp/params.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "6bed41fb-bcfe-44c4-941a-675e481652e3"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "c482ee80-f50a-4b64-916c-c6e7a25397ca",
+          "ruleId": "Cross Site Scripting (Reflected)",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/secured/newuser.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/secured/newuser.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "c482ee80-f50a-4b64-916c-c6e7a25397ca"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "623f60c7-b46b-4118-8dbd-f8ed522e815a",
+          "ruleId": "Cross Site Scripting (Reflected)",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/secured/newuser.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/secured/newuser.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "623f60c7-b46b-4118-8dbd-f8ed522e815a"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "59b635d0-2a2c-4099-8565-128bf94b461d",
+          "ruleId": "Cross Site Scripting (Reflected)",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/secured/newuser.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/secured/newuser.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "59b635d0-2a2c-4099-8565-128bf94b461d"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "ef24da6a-6469-482a-86e4-d67722247660",
+          "ruleId": "Cross Site Scripting (Reflected)",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/secured/newuser.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/secured/newuser.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "ef24da6a-6469-482a-86e4-d67722247660"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "2624d783-fbc7-4eeb-985a-7a0ed772a413",
+          "ruleId": "Cross Site Scripting (Reflected)",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/secured/newuser.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/secured/newuser.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "2624d783-fbc7-4eeb-985a-7a0ed772a413"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "9bda1df9-fc83-4db3-afec-744779c02a6a",
+          "ruleId": "Cross Site Scripting (Reflected)",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/search.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/search.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "9bda1df9-fc83-4db3-afec-744779c02a6a"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "4ddc741c-52f7-4fc8-a0b4-0b21c49e423b",
+          "ruleId": "Cross Site Scripting (Reflected)",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/secured/newuser.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/secured/newuser.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "4ddc741c-52f7-4fc8-a0b4-0b21c49e423b"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "989075ac-36ea-4ae7-8d9c-ce29f8d9a4cc",
+          "ruleId": "Cross Site Scripting (Reflected)",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/guestbook.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/guestbook.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "989075ac-36ea-4ae7-8d9c-ce29f8d9a4cc"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "de8abbf0-6572-4bd6-aa90-d7b8f8f05cc9",
+          "ruleId": "Cross Site Scripting (Reflected)",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/guestbook.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/guestbook.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "de8abbf0-6572-4bd6-aa90-d7b8f8f05cc9"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "High"
+          }
+        },
+        {
+          "guid": "0b2e59d6-e388-4f0e-b760-153f51666816",
+          "ruleId": "HTTP Only Site",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/cart.php"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/cart.php",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "0b2e59d6-e388-4f0e-b760-153f51666816"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "Medium"
+          }
+        },
+        {
+          "guid": "ac62943b-6e57-4a92-8f54-5e6ca4cd0bab",
+          "ruleId": ".htaccess Information Leak",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/Mod_Rewrite_Shop/Details/web-camera-a4tech/2/.htaccess"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/Mod_Rewrite_Shop/Details/web-camera-a4tech/2/.htaccess",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "ac62943b-6e57-4a92-8f54-5e6ca4cd0bab"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "Medium"
+          }
+        },
+        {
+          "guid": "3b0802c9-22e1-4dba-ae02-534d0f338d7f",
+          "ruleId": ".htaccess Information Leak",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/Mod_Rewrite_Shop/Details/network-attached-storage-dlink/1/.htaccess"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/Mod_Rewrite_Shop/Details/network-attached-storage-dlink/1/.htaccess",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "3b0802c9-22e1-4dba-ae02-534d0f338d7f"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "Medium"
+          }
+        },
+        {
+          "guid": "df6c9db8-8601-4b81-9275-9b74d93ad380",
+          "ruleId": ".htaccess Information Leak",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/Mod_Rewrite_Shop/Details/color-printer/3/.htaccess"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/Mod_Rewrite_Shop/Details/color-printer/3/.htaccess",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "df6c9db8-8601-4b81-9275-9b74d93ad380"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "Medium"
+          }
+        },
+        {
+          "guid": "70d94727-ad1f-4eb5-b7ff-048a33c2754c",
+          "ruleId": ".htaccess Information Leak",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/Mod_Rewrite_Shop/BuyProduct-3/.htaccess"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/Mod_Rewrite_Shop/BuyProduct-3/.htaccess",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "70d94727-ad1f-4eb5-b7ff-048a33c2754c"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "Medium"
+          }
+        },
+        {
+          "guid": "a0e787a8-d437-4eb9-ba44-62ad6789b355",
+          "ruleId": ".htaccess Information Leak",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/Mod_Rewrite_Shop/BuyProduct-2/.htaccess"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/Mod_Rewrite_Shop/BuyProduct-2/.htaccess",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "a0e787a8-d437-4eb9-ba44-62ad6789b355"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "Medium"
+          }
+        },
+        {
+          "guid": "259ff0cc-f737-4d5d-abce-a318eeb054e9",
+          "ruleId": ".htaccess Information Leak",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/Mod_Rewrite_Shop/BuyProduct-1/.htaccess"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/Mod_Rewrite_Shop/BuyProduct-1/.htaccess",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "259ff0cc-f737-4d5d-abce-a318eeb054e9"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "Medium"
+          }
+        },
+        {
+          "guid": "5d750e92-a68a-4166-b3d1-073bddf142c1",
+          "ruleId": ".htaccess Information Leak",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/Mod_Rewrite_Shop/.htaccess"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/Mod_Rewrite_Shop/.htaccess",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "5d750e92-a68a-4166-b3d1-073bddf142c1"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "Medium",
+            "risk": "Medium"
+          }
+        },
+        {
+          "guid": "1dd4e75c-89c5-4de7-89ab-bc4f7e665d08",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "1dd4e75c-89c5-4de7-89ab-bc4f7e665d08"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "7452fd7e-3fb5-41f3-bb74-46cb76f836c4",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "7452fd7e-3fb5-41f3-bb74-46cb76f836c4"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "ac0c5f0c-d3da-4e19-9740-fa68bbb116ac",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "ac0c5f0c-d3da-4e19-9740-fa68bbb116ac"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "bf8e8bee-50b0-47b9-b826-5808b355b450",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "bf8e8bee-50b0-47b9-b826-5808b355b450"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "3035bbef-3409-415b-b908-e2af571043e1",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "3035bbef-3409-415b-b908-e2af571043e1"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "69b217b8-6e02-4b2f-b823-480ffa074e1f",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "69b217b8-6e02-4b2f-b823-480ffa074e1f"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "ce7b9c4d-003b-4da9-8fe9-362a640c2cb0",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "ce7b9c4d-003b-4da9-8fe9-362a640c2cb0"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "eb6a455a-8f03-4463-98d4-9bbb444f9e84",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "eb6a455a-8f03-4463-98d4-9bbb444f9e84"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "9a76fa1b-c3d4-422f-9982-3570a1276fae",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "9a76fa1b-c3d4-422f-9982-3570a1276fae"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "958d8d15-360c-41e6-a930-171a4d6c8caa",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "958d8d15-360c-41e6-a930-171a4d6c8caa"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "c42052e9-5f95-4bb1-91ef-acaf43f30e17",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "c42052e9-5f95-4bb1-91ef-acaf43f30e17"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "ce855e4f-a950-4cb2-9446-a1c21c0e9a59",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "ce855e4f-a950-4cb2-9446-a1c21c0e9a59"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "0a5f3073-191a-439b-b1af-cf601fbe46e5",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "0a5f3073-191a-439b-b1af-cf601fbe46e5"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "832b86ab-f192-450b-8164-adf547b00e8a",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "832b86ab-f192-450b-8164-adf547b00e8a"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "524edd1e-657f-4bf5-95c3-f1398ebbc5a1",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "524edd1e-657f-4bf5-95c3-f1398ebbc5a1"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "feb831ff-9886-4fcf-a063-7358db0f5d32",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "feb831ff-9886-4fcf-a063-7358db0f5d32"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
+        },
+        {
+          "guid": "3e86fde5-ade6-4e35-b7a7-88377e7bd6f9",
+          "ruleId": "HTTP Missing Security Headers",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential vulnerability found"
+          },
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "name": "/"
+                }
+              ]
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/",
+                  "index": 0
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "nightvisionIssueID": "3e86fde5-ade6-4e35-b7a7-88377e7bd6f9"
+          },
+          "baselineState": "new",
+          "rank": 100,
+          "properties": {
+            "confidence": "High",
+            "risk": "Info"
+          }
         }
       ]
     }
