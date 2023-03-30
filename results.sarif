@@ -10,34 +10,10 @@
           "informationUri": "https://app.nightvision.net/scans/58810ae7-d54d-4ee4-9325-2d2af66242a5/issues",
           "rules": [
             {
-              "id": "Cross Site Scripting (Reflected)",
-              "name": "CrossSiteScripting(Reflected)",
-              "shortDescription": {
-                "text": "Identifies reflected cross-site scripting vulnerabilities in web applications"
-              },
-              "helpUri": "https://docs.nightvision.net"
-            },
-            {
-              "id": "HTTP Only Site",
-              "name": "HTTPOnlySite",
-              "shortDescription": {
-                "text": "Checks if a website has been configured to only use HTTPS instead of HTTP"
-              },
-              "helpUri": "https://docs.nightvision.net"
-            },
-            {
-              "id": ".htaccess Information Leak",
-              "name": ".HtaccessInformationLeak",
-              "shortDescription": {
-                "text": "Looks for potential information leaks in the .htaccess file of a web application"
-              },
-              "helpUri": "https://docs.nightvision.net"
-            },
-            {
               "id": "HTTP Missing Security Headers",
               "name": "HTTPMissingSecurityHeaders",
               "shortDescription": {
-                "text": "Detects when web pages are missing recommended security headers"
+                "text": "Web pages are missing recommended security headers"
               },
               "helpUri": "https://docs.nightvision.net"
             },
@@ -45,7 +21,31 @@
               "id": "SQL Injection",
               "name": "SQLInjection",
               "shortDescription": {
-                "text": "Detects potential SQL injection vulnerabilities in web applications"
+                "text": "Potential SQL injection vulnerability"
+              },
+              "helpUri": "https://docs.nightvision.net"
+            },
+            {
+              "id": "Cross Site Scripting (Reflected)",
+              "name": "CrossSiteScripting(Reflected)",
+              "shortDescription": {
+                "text": "Reflected cross-site scripting vulnerability"
+              },
+              "helpUri": "https://docs.nightvision.net"
+            },
+            {
+              "id": "HTTP Only Site",
+              "name": "HTTPOnlySite",
+              "shortDescription": {
+                "text": "Usage of HTTP over HTTPs"
+              },
+              "helpUri": "https://docs.nightvision.net"
+            },
+            {
+              "id": ".htaccess Information Leak",
+              "name": ".HtaccessInformationLeak",
+              "shortDescription": {
+                "text": "Potential information leak in the .htaccess file"
               },
               "helpUri": "https://docs.nightvision.net"
             }
