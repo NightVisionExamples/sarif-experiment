@@ -10,14 +10,6 @@
           "informationUri": "https://app.nightvision.net/scans/58810ae7-d54d-4ee4-9325-2d2af66242a5/issues",
           "rules": [
             {
-              "id": "SQL Injection",
-              "name": "SQLInjection",
-              "shortDescription": {
-                "text": "Potential SQL injection vulnerability"
-              },
-              "helpUri": "https://docs.nightvision.net"
-            },
-            {
               "id": "Cross Site Scripting (Reflected)",
               "name": "CrossSiteScripting(Reflected)",
               "shortDescription": {
@@ -48,6 +40,14 @@
                 "text": "Web pages are missing recommended security headers"
               },
               "helpUri": "https://docs.nightvision.net"
+            },
+            {
+              "id": "SQL Injection",
+              "name": "SQLInjection",
+              "shortDescription": {
+                "text": "Potential SQL injection vulnerability"
+              },
+              "helpUri": "https://docs.nightvision.net"
             }
           ]
         }
@@ -62,6 +62,7 @@
       ],
       "results": [
         {
+          "guid": "e701e801-2b1e-4cc8-8538-fb798806de6c",
           "ruleId": "SQL Injection",
           "kind": "fail",
           "level": "error",
@@ -83,7 +84,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "fe9bfb35-95a6-42e3-9edb-05dc1537ca1f"
+            "nightvisionIssueID": "e701e801-2b1e-4cc8-8538-fb798806de6c"
           },
           "baselineState": "new",
           "rank": 100,
@@ -93,6 +94,7 @@
           }
         },
         {
+          "guid": "3ea8b3c3-4534-4eb8-ba44-3e71294b7bf4",
           "ruleId": "SQL Injection",
           "kind": "fail",
           "level": "error",
@@ -114,7 +116,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "fe063d5f-1605-4810-a08c-b23fe6ad638d"
+            "nightvisionIssueID": "3ea8b3c3-4534-4eb8-ba44-3e71294b7bf4"
           },
           "baselineState": "new",
           "rank": 100,
@@ -124,6 +126,7 @@
           }
         },
         {
+          "guid": "13f5b339-20ae-4518-8ed5-912cdbf3ac10",
           "ruleId": "SQL Injection",
           "kind": "fail",
           "level": "error",
@@ -145,7 +148,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "47de2265-5e53-4ba2-a79d-2584bcc389d5"
+            "nightvisionIssueID": "13f5b339-20ae-4518-8ed5-912cdbf3ac10"
           },
           "baselineState": "new",
           "rank": 100,
@@ -155,6 +158,7 @@
           }
         },
         {
+          "guid": "1a5b8ee3-08cd-4d3c-91c0-7c141010ae44",
           "ruleId": "SQL Injection",
           "kind": "fail",
           "level": "error",
@@ -176,7 +180,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "43de48ab-c9b5-4d41-81ef-e032c761fdff"
+            "nightvisionIssueID": "1a5b8ee3-08cd-4d3c-91c0-7c141010ae44"
           },
           "baselineState": "new",
           "rank": 100,
@@ -186,6 +190,7 @@
           }
         },
         {
+          "guid": "5d128295-0f26-4b8e-965e-92c566fa2366",
           "ruleId": "SQL Injection",
           "kind": "fail",
           "level": "error",
@@ -207,7 +212,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "44d6a4e9-7890-4b4d-b3cd-52b938d0333c"
+            "nightvisionIssueID": "5d128295-0f26-4b8e-965e-92c566fa2366"
           },
           "baselineState": "new",
           "rank": 100,
@@ -217,6 +222,7 @@
           }
         },
         {
+          "guid": "4341fd46-2ed1-44b6-99de-7f9eb27be11e",
           "ruleId": "SQL Injection",
           "kind": "fail",
           "level": "error",
@@ -238,7 +244,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "22bfab4d-124c-4a98-92eb-e02dd0d7d21d"
+            "nightvisionIssueID": "4341fd46-2ed1-44b6-99de-7f9eb27be11e"
           },
           "baselineState": "new",
           "rank": 100,
@@ -248,6 +254,7 @@
           }
         },
         {
+          "guid": "d9df84fd-0b7c-4271-a1b9-d64d693973d0",
           "ruleId": "SQL Injection",
           "kind": "fail",
           "level": "error",
@@ -269,7 +276,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "9a24698d-a33e-4999-91f1-db3a15c4404b"
+            "nightvisionIssueID": "d9df84fd-0b7c-4271-a1b9-d64d693973d0"
           },
           "baselineState": "new",
           "rank": 100,
@@ -279,6 +286,7 @@
           }
         },
         {
+          "guid": "d2c3ec74-55ce-4166-9107-f07c2c420c66",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -300,7 +308,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "7f588914-bcab-4563-881f-3e8c510f894a"
+            "nightvisionIssueID": "d2c3ec74-55ce-4166-9107-f07c2c420c66"
           },
           "baselineState": "new",
           "rank": 100,
@@ -310,6 +318,7 @@
           }
         },
         {
+          "guid": "6202aa3c-154b-40eb-aacd-c2dc64fc12f0",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -331,7 +340,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "d0fbdafc-1bc4-4ff2-b24c-8cb989ae2f04"
+            "nightvisionIssueID": "6202aa3c-154b-40eb-aacd-c2dc64fc12f0"
           },
           "baselineState": "new",
           "rank": 100,
@@ -341,6 +350,7 @@
           }
         },
         {
+          "guid": "0f2a37d4-b20f-4d37-a74d-873d5531005b",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -362,7 +372,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "cb4ab093-e01c-4648-a937-0b9272e9dec0"
+            "nightvisionIssueID": "0f2a37d4-b20f-4d37-a74d-873d5531005b"
           },
           "baselineState": "new",
           "rank": 100,
@@ -372,6 +382,7 @@
           }
         },
         {
+          "guid": "5644e8fe-d579-4ced-9c7e-4008be55bbcf",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -393,7 +404,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "6c854e0f-5051-40d6-8e38-f2bec5999578"
+            "nightvisionIssueID": "5644e8fe-d579-4ced-9c7e-4008be55bbcf"
           },
           "baselineState": "new",
           "rank": 100,
@@ -403,6 +414,7 @@
           }
         },
         {
+          "guid": "2df0e802-aa2e-4795-81a0-71a0bf601bb7",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -424,7 +436,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "6bed41fb-bcfe-44c4-941a-675e481652e3"
+            "nightvisionIssueID": "2df0e802-aa2e-4795-81a0-71a0bf601bb7"
           },
           "baselineState": "new",
           "rank": 100,
@@ -434,6 +446,7 @@
           }
         },
         {
+          "guid": "45f74e3d-aee2-4f89-936e-3d50627f930d",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -455,7 +468,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "c482ee80-f50a-4b64-916c-c6e7a25397ca"
+            "nightvisionIssueID": "45f74e3d-aee2-4f89-936e-3d50627f930d"
           },
           "baselineState": "new",
           "rank": 100,
@@ -465,6 +478,7 @@
           }
         },
         {
+          "guid": "34c5d6ee-5a91-4ea7-b344-42b417bd556c",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -486,7 +500,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "623f60c7-b46b-4118-8dbd-f8ed522e815a"
+            "nightvisionIssueID": "34c5d6ee-5a91-4ea7-b344-42b417bd556c"
           },
           "baselineState": "new",
           "rank": 100,
@@ -496,6 +510,7 @@
           }
         },
         {
+          "guid": "06d46723-efda-4f9a-ab72-9bd0dabef6b3",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -517,7 +532,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "59b635d0-2a2c-4099-8565-128bf94b461d"
+            "nightvisionIssueID": "06d46723-efda-4f9a-ab72-9bd0dabef6b3"
           },
           "baselineState": "new",
           "rank": 100,
@@ -527,6 +542,7 @@
           }
         },
         {
+          "guid": "35055610-6c3b-479a-b606-02dff374b6a1",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -548,7 +564,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "ef24da6a-6469-482a-86e4-d67722247660"
+            "nightvisionIssueID": "35055610-6c3b-479a-b606-02dff374b6a1"
           },
           "baselineState": "new",
           "rank": 100,
@@ -558,6 +574,7 @@
           }
         },
         {
+          "guid": "9ac29b9c-bc1f-4a61-8335-40af488175c3",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -579,7 +596,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "2624d783-fbc7-4eeb-985a-7a0ed772a413"
+            "nightvisionIssueID": "9ac29b9c-bc1f-4a61-8335-40af488175c3"
           },
           "baselineState": "new",
           "rank": 100,
@@ -589,6 +606,7 @@
           }
         },
         {
+          "guid": "49efa6e3-5547-49cf-a811-f5849721f9db",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -610,7 +628,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "9bda1df9-fc83-4db3-afec-744779c02a6a"
+            "nightvisionIssueID": "49efa6e3-5547-49cf-a811-f5849721f9db"
           },
           "baselineState": "new",
           "rank": 100,
@@ -620,6 +638,7 @@
           }
         },
         {
+          "guid": "59fee8f7-603f-4bc9-8a5c-98b742d88431",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -641,7 +660,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "4ddc741c-52f7-4fc8-a0b4-0b21c49e423b"
+            "nightvisionIssueID": "59fee8f7-603f-4bc9-8a5c-98b742d88431"
           },
           "baselineState": "new",
           "rank": 100,
@@ -651,6 +670,7 @@
           }
         },
         {
+          "guid": "5e023b7d-e824-4b8c-9b53-5ff49b636ff5",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -672,7 +692,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "989075ac-36ea-4ae7-8d9c-ce29f8d9a4cc"
+            "nightvisionIssueID": "5e023b7d-e824-4b8c-9b53-5ff49b636ff5"
           },
           "baselineState": "new",
           "rank": 100,
@@ -682,6 +702,7 @@
           }
         },
         {
+          "guid": "dc0723bd-f14e-4eb0-95ff-adcc84d60417",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -703,7 +724,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "de8abbf0-6572-4bd6-aa90-d7b8f8f05cc9"
+            "nightvisionIssueID": "dc0723bd-f14e-4eb0-95ff-adcc84d60417"
           },
           "baselineState": "new",
           "rank": 100,
@@ -713,6 +734,7 @@
           }
         },
         {
+          "guid": "2c145a19-765f-4de3-a2ea-2fab0b434f3f",
           "ruleId": "HTTP Only Site",
           "kind": "fail",
           "level": "error",
@@ -734,7 +756,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "0b2e59d6-e388-4f0e-b760-153f51666816"
+            "nightvisionIssueID": "2c145a19-765f-4de3-a2ea-2fab0b434f3f"
           },
           "baselineState": "new",
           "rank": 100,
@@ -744,6 +766,7 @@
           }
         },
         {
+          "guid": "19d5baca-bb2e-4df2-8185-d3bd5297186f",
           "ruleId": ".htaccess Information Leak",
           "kind": "fail",
           "level": "error",
@@ -765,7 +788,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "ac62943b-6e57-4a92-8f54-5e6ca4cd0bab"
+            "nightvisionIssueID": "19d5baca-bb2e-4df2-8185-d3bd5297186f"
           },
           "baselineState": "new",
           "rank": 100,
@@ -775,6 +798,7 @@
           }
         },
         {
+          "guid": "443f9d2d-840e-4593-945c-f4013beed068",
           "ruleId": ".htaccess Information Leak",
           "kind": "fail",
           "level": "error",
@@ -796,7 +820,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "3b0802c9-22e1-4dba-ae02-534d0f338d7f"
+            "nightvisionIssueID": "443f9d2d-840e-4593-945c-f4013beed068"
           },
           "baselineState": "new",
           "rank": 100,
@@ -806,6 +830,7 @@
           }
         },
         {
+          "guid": "b760998c-c6f9-4c9c-aac8-9f0200821014",
           "ruleId": ".htaccess Information Leak",
           "kind": "fail",
           "level": "error",
@@ -827,7 +852,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "df6c9db8-8601-4b81-9275-9b74d93ad380"
+            "nightvisionIssueID": "b760998c-c6f9-4c9c-aac8-9f0200821014"
           },
           "baselineState": "new",
           "rank": 100,
@@ -837,6 +862,7 @@
           }
         },
         {
+          "guid": "79f6d0cd-ee77-4405-8926-c474c76bdf0a",
           "ruleId": ".htaccess Information Leak",
           "kind": "fail",
           "level": "error",
@@ -858,7 +884,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "70d94727-ad1f-4eb5-b7ff-048a33c2754c"
+            "nightvisionIssueID": "79f6d0cd-ee77-4405-8926-c474c76bdf0a"
           },
           "baselineState": "new",
           "rank": 100,
@@ -868,6 +894,7 @@
           }
         },
         {
+          "guid": "2f47f811-f07b-4d17-aaa8-646d82c06f27",
           "ruleId": ".htaccess Information Leak",
           "kind": "fail",
           "level": "error",
@@ -889,7 +916,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "a0e787a8-d437-4eb9-ba44-62ad6789b355"
+            "nightvisionIssueID": "2f47f811-f07b-4d17-aaa8-646d82c06f27"
           },
           "baselineState": "new",
           "rank": 100,
@@ -899,6 +926,7 @@
           }
         },
         {
+          "guid": "4eaa6110-1c35-4e61-9472-2af815e5159b",
           "ruleId": ".htaccess Information Leak",
           "kind": "fail",
           "level": "error",
@@ -920,7 +948,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "259ff0cc-f737-4d5d-abce-a318eeb054e9"
+            "nightvisionIssueID": "4eaa6110-1c35-4e61-9472-2af815e5159b"
           },
           "baselineState": "new",
           "rank": 100,
@@ -930,6 +958,7 @@
           }
         },
         {
+          "guid": "805134c4-bc49-487d-86bf-fa627c762df1",
           "ruleId": ".htaccess Information Leak",
           "kind": "fail",
           "level": "error",
@@ -951,7 +980,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "5d750e92-a68a-4166-b3d1-073bddf142c1"
+            "nightvisionIssueID": "805134c4-bc49-487d-86bf-fa627c762df1"
           },
           "baselineState": "new",
           "rank": 100,
@@ -961,6 +990,7 @@
           }
         },
         {
+          "guid": "ba6db5fd-94fa-4a1b-8855-8454d3cefdc0",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -982,7 +1012,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "1dd4e75c-89c5-4de7-89ab-bc4f7e665d08"
+            "nightvisionIssueID": "ba6db5fd-94fa-4a1b-8855-8454d3cefdc0"
           },
           "baselineState": "new",
           "rank": 100,
@@ -992,6 +1022,7 @@
           }
         },
         {
+          "guid": "854f5579-c690-4421-8fdb-416a1bd4db93",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1013,7 +1044,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "7452fd7e-3fb5-41f3-bb74-46cb76f836c4"
+            "nightvisionIssueID": "854f5579-c690-4421-8fdb-416a1bd4db93"
           },
           "baselineState": "new",
           "rank": 100,
@@ -1023,6 +1054,7 @@
           }
         },
         {
+          "guid": "95e2c55c-1cd0-4451-af89-2be954072bdd",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1044,7 +1076,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "ac0c5f0c-d3da-4e19-9740-fa68bbb116ac"
+            "nightvisionIssueID": "95e2c55c-1cd0-4451-af89-2be954072bdd"
           },
           "baselineState": "new",
           "rank": 100,
@@ -1054,6 +1086,7 @@
           }
         },
         {
+          "guid": "1532be42-839f-47cb-8638-601681569349",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1075,7 +1108,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "bf8e8bee-50b0-47b9-b826-5808b355b450"
+            "nightvisionIssueID": "1532be42-839f-47cb-8638-601681569349"
           },
           "baselineState": "new",
           "rank": 100,
@@ -1085,6 +1118,7 @@
           }
         },
         {
+          "guid": "19008bad-3e0d-4d71-9bb3-d67152284fab",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1106,7 +1140,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "3035bbef-3409-415b-b908-e2af571043e1"
+            "nightvisionIssueID": "19008bad-3e0d-4d71-9bb3-d67152284fab"
           },
           "baselineState": "new",
           "rank": 100,
@@ -1116,6 +1150,7 @@
           }
         },
         {
+          "guid": "e7903680-92c4-4187-97eb-b2a571d527e3",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1137,7 +1172,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "69b217b8-6e02-4b2f-b823-480ffa074e1f"
+            "nightvisionIssueID": "e7903680-92c4-4187-97eb-b2a571d527e3"
           },
           "baselineState": "new",
           "rank": 100,
@@ -1147,6 +1182,7 @@
           }
         },
         {
+          "guid": "ccf71fd3-66ab-4c0e-ae3f-bac33ae09e0e",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1168,7 +1204,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "ce7b9c4d-003b-4da9-8fe9-362a640c2cb0"
+            "nightvisionIssueID": "ccf71fd3-66ab-4c0e-ae3f-bac33ae09e0e"
           },
           "baselineState": "new",
           "rank": 100,
@@ -1178,6 +1214,7 @@
           }
         },
         {
+          "guid": "523ff2bc-c98a-496b-8266-ee83cbaa9cb7",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1199,7 +1236,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "eb6a455a-8f03-4463-98d4-9bbb444f9e84"
+            "nightvisionIssueID": "523ff2bc-c98a-496b-8266-ee83cbaa9cb7"
           },
           "baselineState": "new",
           "rank": 100,
@@ -1209,6 +1246,7 @@
           }
         },
         {
+          "guid": "bf8f4cf6-ed21-4714-8f98-d89b4cec39a1",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1230,7 +1268,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "9a76fa1b-c3d4-422f-9982-3570a1276fae"
+            "nightvisionIssueID": "bf8f4cf6-ed21-4714-8f98-d89b4cec39a1"
           },
           "baselineState": "new",
           "rank": 100,
@@ -1240,6 +1278,7 @@
           }
         },
         {
+          "guid": "cdf81836-2c01-463c-9c0f-4f9caee0b044",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1261,7 +1300,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "958d8d15-360c-41e6-a930-171a4d6c8caa"
+            "nightvisionIssueID": "cdf81836-2c01-463c-9c0f-4f9caee0b044"
           },
           "baselineState": "new",
           "rank": 100,
@@ -1271,6 +1310,7 @@
           }
         },
         {
+          "guid": "6850c3ee-84f9-4064-b44b-d85e39f90dfb",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1292,7 +1332,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "c42052e9-5f95-4bb1-91ef-acaf43f30e17"
+            "nightvisionIssueID": "6850c3ee-84f9-4064-b44b-d85e39f90dfb"
           },
           "baselineState": "new",
           "rank": 100,
@@ -1302,6 +1342,7 @@
           }
         },
         {
+          "guid": "3ca18d3a-b588-4794-b0ba-69ab729a5f65",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1323,7 +1364,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "ce855e4f-a950-4cb2-9446-a1c21c0e9a59"
+            "nightvisionIssueID": "3ca18d3a-b588-4794-b0ba-69ab729a5f65"
           },
           "baselineState": "new",
           "rank": 100,
@@ -1333,6 +1374,7 @@
           }
         },
         {
+          "guid": "cab7dc1c-76ee-43ed-97cf-d6d614a6ba3a",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1354,7 +1396,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "0a5f3073-191a-439b-b1af-cf601fbe46e5"
+            "nightvisionIssueID": "cab7dc1c-76ee-43ed-97cf-d6d614a6ba3a"
           },
           "baselineState": "new",
           "rank": 100,
@@ -1364,6 +1406,7 @@
           }
         },
         {
+          "guid": "f378c74b-05d4-4f2d-a885-7a26ddca0da9",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1385,7 +1428,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "832b86ab-f192-450b-8164-adf547b00e8a"
+            "nightvisionIssueID": "f378c74b-05d4-4f2d-a885-7a26ddca0da9"
           },
           "baselineState": "new",
           "rank": 100,
@@ -1395,6 +1438,7 @@
           }
         },
         {
+          "guid": "07cbb74f-45cc-473f-a0e2-151e5ef0592e",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1416,7 +1460,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "524edd1e-657f-4bf5-95c3-f1398ebbc5a1"
+            "nightvisionIssueID": "07cbb74f-45cc-473f-a0e2-151e5ef0592e"
           },
           "baselineState": "new",
           "rank": 100,
@@ -1426,6 +1470,7 @@
           }
         },
         {
+          "guid": "9c3dcb1f-bc67-49ef-acb8-909bd61b01f4",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1447,7 +1492,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "feb831ff-9886-4fcf-a063-7358db0f5d32"
+            "nightvisionIssueID": "9c3dcb1f-bc67-49ef-acb8-909bd61b01f4"
           },
           "baselineState": "new",
           "rank": 100,
@@ -1457,6 +1502,7 @@
           }
         },
         {
+          "guid": "4992b8b5-a9be-4713-b455-a5ab6be8872d",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1478,7 +1524,7 @@
             }
           ],
           "fingerprints": {
-            "nightvisionIssueID": "3e86fde5-ade6-4e35-b7a7-88377e7bd6f9"
+            "nightvisionIssueID": "4992b8b5-a9be-4713-b455-a5ab6be8872d"
           },
           "baselineState": "new",
           "rank": 100,
