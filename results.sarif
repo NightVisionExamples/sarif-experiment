@@ -10,14 +10,6 @@
           "informationUri": "https://app.nightvision.net/scans/58810ae7-d54d-4ee4-9325-2d2af66242a5/issues",
           "rules": [
             {
-              "id": "SQL Injection",
-              "name": "SQLInjection",
-              "shortDescription": {
-                "text": "Detects potential SQL injection vulnerabilities in web applications"
-              },
-              "helpUri": "https://docs.nightvision.net"
-            },
-            {
               "id": "Cross Site Scripting (Reflected)",
               "name": "CrossSiteScripting(Reflected)",
               "shortDescription": {
@@ -48,10 +40,26 @@
                 "text": "Detects when web pages are missing recommended security headers"
               },
               "helpUri": "https://docs.nightvision.net"
+            },
+            {
+              "id": "SQL Injection",
+              "name": "SQLInjection",
+              "shortDescription": {
+                "text": "Detects potential SQL injection vulnerabilities in web applications"
+              },
+              "helpUri": "https://docs.nightvision.net"
             }
           ]
         }
       },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "https://app.nightvision.net/scans/58810ae7-d54d-4ee4-9325-2d2af66242a5/issues"
+          },
+          "length": -1
+        }
+      ],
       "results": [
         {
           "guid": "fe9bfb35-95a6-42e3-9edb-05dc1537ca1f",
@@ -63,17 +71,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/product.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/product.php",
-                  "index": 0
+                  "uri": "/product.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /product.php"
+                  }
                 }
               }
             }
@@ -98,17 +103,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/listproducts.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/listproducts.php",
-                  "index": 0
+                  "uri": "/listproducts.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /listproducts.php"
+                  }
                 }
               }
             }
@@ -133,17 +135,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/listproducts.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/listproducts.php",
-                  "index": 0
+                  "uri": "/listproducts.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /listproducts.php"
+                  }
                 }
               }
             }
@@ -168,17 +167,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/artists.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/artists.php",
-                  "index": 0
+                  "uri": "/artists.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /artists.php"
+                  }
                 }
               }
             }
@@ -203,17 +199,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/userinfo.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/userinfo.php",
-                  "index": 0
+                  "uri": "/userinfo.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /userinfo.php"
+                  }
                 }
               }
             }
@@ -238,17 +231,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/userinfo.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/userinfo.php",
-                  "index": 0
+                  "uri": "/userinfo.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /userinfo.php"
+                  }
                 }
               }
             }
@@ -273,17 +263,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/secured/newuser.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/secured/newuser.php",
-                  "index": 0
+                  "uri": "/secured/newuser.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /secured/newuser.php"
+                  }
                 }
               }
             }
@@ -308,17 +295,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/listproducts.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/listproducts.php",
-                  "index": 0
+                  "uri": "/listproducts.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /listproducts.php"
+                  }
                 }
               }
             }
@@ -343,17 +327,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/listproducts.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/listproducts.php",
-                  "index": 0
+                  "uri": "/listproducts.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /listproducts.php"
+                  }
                 }
               }
             }
@@ -378,17 +359,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/hpp/params.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/hpp/params.php",
-                  "index": 0
+                  "uri": "/hpp/params.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /hpp/params.php"
+                  }
                 }
               }
             }
@@ -413,17 +391,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/hpp/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/hpp/",
-                  "index": 0
+                  "uri": "/hpp/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /hpp/"
+                  }
                 }
               }
             }
@@ -448,17 +423,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/hpp/params.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/hpp/params.php",
-                  "index": 0
+                  "uri": "/hpp/params.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /hpp/params.php"
+                  }
                 }
               }
             }
@@ -483,17 +455,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/secured/newuser.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/secured/newuser.php",
-                  "index": 0
+                  "uri": "/secured/newuser.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /secured/newuser.php"
+                  }
                 }
               }
             }
@@ -518,17 +487,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/secured/newuser.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/secured/newuser.php",
-                  "index": 0
+                  "uri": "/secured/newuser.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /secured/newuser.php"
+                  }
                 }
               }
             }
@@ -553,17 +519,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/secured/newuser.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/secured/newuser.php",
-                  "index": 0
+                  "uri": "/secured/newuser.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /secured/newuser.php"
+                  }
                 }
               }
             }
@@ -588,17 +551,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/secured/newuser.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/secured/newuser.php",
-                  "index": 0
+                  "uri": "/secured/newuser.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /secured/newuser.php"
+                  }
                 }
               }
             }
@@ -623,17 +583,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/secured/newuser.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/secured/newuser.php",
-                  "index": 0
+                  "uri": "/secured/newuser.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /secured/newuser.php"
+                  }
                 }
               }
             }
@@ -658,17 +615,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/search.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/search.php",
-                  "index": 0
+                  "uri": "/search.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /search.php"
+                  }
                 }
               }
             }
@@ -693,17 +647,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/secured/newuser.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/secured/newuser.php",
-                  "index": 0
+                  "uri": "/secured/newuser.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /secured/newuser.php"
+                  }
                 }
               }
             }
@@ -728,17 +679,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/guestbook.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/guestbook.php",
-                  "index": 0
+                  "uri": "/guestbook.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /guestbook.php"
+                  }
                 }
               }
             }
@@ -763,17 +711,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/guestbook.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/guestbook.php",
-                  "index": 0
+                  "uri": "/guestbook.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /guestbook.php"
+                  }
                 }
               }
             }
@@ -798,17 +743,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/cart.php"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/cart.php",
-                  "index": 0
+                  "uri": "/cart.php"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /cart.php"
+                  }
                 }
               }
             }
@@ -833,17 +775,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/Mod_Rewrite_Shop/Details/web-camera-a4tech/2/.htaccess"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/Mod_Rewrite_Shop/Details/web-camera-a4tech/2/.htaccess",
-                  "index": 0
+                  "uri": "/Mod_Rewrite_Shop/Details/web-camera-a4tech/2/.htaccess"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /Mod_Rewrite_Shop/Details/web-camera-a4tech/2/.htaccess"
+                  }
                 }
               }
             }
@@ -868,17 +807,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/Mod_Rewrite_Shop/Details/network-attached-storage-dlink/1/.htaccess"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/Mod_Rewrite_Shop/Details/network-attached-storage-dlink/1/.htaccess",
-                  "index": 0
+                  "uri": "/Mod_Rewrite_Shop/Details/network-attached-storage-dlink/1/.htaccess"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /Mod_Rewrite_Shop/Details/network-attached-storage-dlink/1/.htaccess"
+                  }
                 }
               }
             }
@@ -903,17 +839,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/Mod_Rewrite_Shop/Details/color-printer/3/.htaccess"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/Mod_Rewrite_Shop/Details/color-printer/3/.htaccess",
-                  "index": 0
+                  "uri": "/Mod_Rewrite_Shop/Details/color-printer/3/.htaccess"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /Mod_Rewrite_Shop/Details/color-printer/3/.htaccess"
+                  }
                 }
               }
             }
@@ -938,17 +871,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/Mod_Rewrite_Shop/BuyProduct-3/.htaccess"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/Mod_Rewrite_Shop/BuyProduct-3/.htaccess",
-                  "index": 0
+                  "uri": "/Mod_Rewrite_Shop/BuyProduct-3/.htaccess"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /Mod_Rewrite_Shop/BuyProduct-3/.htaccess"
+                  }
                 }
               }
             }
@@ -973,17 +903,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/Mod_Rewrite_Shop/BuyProduct-2/.htaccess"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/Mod_Rewrite_Shop/BuyProduct-2/.htaccess",
-                  "index": 0
+                  "uri": "/Mod_Rewrite_Shop/BuyProduct-2/.htaccess"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /Mod_Rewrite_Shop/BuyProduct-2/.htaccess"
+                  }
                 }
               }
             }
@@ -1008,17 +935,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/Mod_Rewrite_Shop/BuyProduct-1/.htaccess"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/Mod_Rewrite_Shop/BuyProduct-1/.htaccess",
-                  "index": 0
+                  "uri": "/Mod_Rewrite_Shop/BuyProduct-1/.htaccess"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /Mod_Rewrite_Shop/BuyProduct-1/.htaccess"
+                  }
                 }
               }
             }
@@ -1043,17 +967,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/Mod_Rewrite_Shop/.htaccess"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/Mod_Rewrite_Shop/.htaccess",
-                  "index": 0
+                  "uri": "/Mod_Rewrite_Shop/.htaccess"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /Mod_Rewrite_Shop/.htaccess"
+                  }
                 }
               }
             }
@@ -1078,17 +999,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1113,17 +1031,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1148,17 +1063,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1183,17 +1095,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1218,17 +1127,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1253,17 +1159,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1288,17 +1191,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1323,17 +1223,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1358,17 +1255,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1393,17 +1287,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1428,17 +1319,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1463,17 +1351,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1498,17 +1383,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1533,17 +1415,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1568,17 +1447,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1603,17 +1479,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
@@ -1638,17 +1511,14 @@
           },
           "locations": [
             {
-              "logicalLocations": [
-                {
-                  "name": "/"
-                }
-              ]
-            },
-            {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "/",
-                  "index": 0
+                  "uri": "/"
+                },
+                "region": {
+                  "message": {
+                    "text": "Found on endpoint /"
+                  }
                 }
               }
             }
