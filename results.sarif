@@ -10,6 +10,22 @@
           "informationUri": "https://app.nightvision.net/scans/58810ae7-d54d-4ee4-9325-2d2af66242a5/issues",
           "rules": [
             {
+              "id": "HTTP Only Site",
+              "name": "HTTPOnlySite",
+              "shortDescription": {
+                "text": "Usage of HTTP over HTTPs"
+              },
+              "helpUri": "https://docs.nightvision.net"
+            },
+            {
+              "id": ".htaccess Information Leak",
+              "name": ".HtaccessInformationLeak",
+              "shortDescription": {
+                "text": "Potential information leak in the .htaccess file"
+              },
+              "helpUri": "https://docs.nightvision.net"
+            },
+            {
               "id": "HTTP Missing Security Headers",
               "name": "HTTPMissingSecurityHeaders",
               "shortDescription": {
@@ -30,22 +46,6 @@
               "name": "CrossSiteScripting(Reflected)",
               "shortDescription": {
                 "text": "Reflected cross-site scripting vulnerability"
-              },
-              "helpUri": "https://docs.nightvision.net"
-            },
-            {
-              "id": "HTTP Only Site",
-              "name": "HTTPOnlySite",
-              "shortDescription": {
-                "text": "Usage of HTTP over HTTPs"
-              },
-              "helpUri": "https://docs.nightvision.net"
-            },
-            {
-              "id": ".htaccess Information Leak",
-              "name": ".HtaccessInformationLeak",
-              "shortDescription": {
-                "text": "Potential information leak in the .htaccess file"
               },
               "helpUri": "https://docs.nightvision.net"
             }
