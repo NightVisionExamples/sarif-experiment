@@ -10,6 +10,22 @@
           "informationUri": "https://app.nightvision.net/scans/58810ae7-d54d-4ee4-9325-2d2af66242a5/issues",
           "rules": [
             {
+              "id": "SQL Injection",
+              "name": "SQLInjection",
+              "shortDescription": {
+                "text": "Potential SQL injection vulnerability"
+              },
+              "helpUri": "https://docs.nightvision.net"
+            },
+            {
+              "id": "Cross Site Scripting (Reflected)",
+              "name": "CrossSiteScripting(Reflected)",
+              "shortDescription": {
+                "text": "Reflected cross-site scripting vulnerability"
+              },
+              "helpUri": "https://docs.nightvision.net"
+            },
+            {
               "id": "HTTP Only Site",
               "name": "HTTPOnlySite",
               "shortDescription": {
@@ -32,22 +48,6 @@
                 "text": "Web pages are missing recommended security headers"
               },
               "helpUri": "https://docs.nightvision.net"
-            },
-            {
-              "id": "SQL Injection",
-              "name": "SQLInjection",
-              "shortDescription": {
-                "text": "Potential SQL injection vulnerability"
-              },
-              "helpUri": "https://docs.nightvision.net"
-            },
-            {
-              "id": "Cross Site Scripting (Reflected)",
-              "name": "CrossSiteScripting(Reflected)",
-              "shortDescription": {
-                "text": "Reflected cross-site scripting vulnerability"
-              },
-              "helpUri": "https://docs.nightvision.net"
             }
           ]
         }
@@ -62,7 +62,6 @@
       ],
       "results": [
         {
-          "guid": "fe9bfb35-95a6-42e3-9edb-05dc1537ca1f",
           "ruleId": "SQL Injection",
           "kind": "fail",
           "level": "error",
@@ -94,7 +93,6 @@
           }
         },
         {
-          "guid": "fe063d5f-1605-4810-a08c-b23fe6ad638d",
           "ruleId": "SQL Injection",
           "kind": "fail",
           "level": "error",
@@ -126,7 +124,6 @@
           }
         },
         {
-          "guid": "47de2265-5e53-4ba2-a79d-2584bcc389d5",
           "ruleId": "SQL Injection",
           "kind": "fail",
           "level": "error",
@@ -158,7 +155,6 @@
           }
         },
         {
-          "guid": "43de48ab-c9b5-4d41-81ef-e032c761fdff",
           "ruleId": "SQL Injection",
           "kind": "fail",
           "level": "error",
@@ -190,7 +186,6 @@
           }
         },
         {
-          "guid": "44d6a4e9-7890-4b4d-b3cd-52b938d0333c",
           "ruleId": "SQL Injection",
           "kind": "fail",
           "level": "error",
@@ -222,7 +217,6 @@
           }
         },
         {
-          "guid": "22bfab4d-124c-4a98-92eb-e02dd0d7d21d",
           "ruleId": "SQL Injection",
           "kind": "fail",
           "level": "error",
@@ -254,7 +248,6 @@
           }
         },
         {
-          "guid": "9a24698d-a33e-4999-91f1-db3a15c4404b",
           "ruleId": "SQL Injection",
           "kind": "fail",
           "level": "error",
@@ -286,7 +279,6 @@
           }
         },
         {
-          "guid": "7f588914-bcab-4563-881f-3e8c510f894a",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -318,7 +310,6 @@
           }
         },
         {
-          "guid": "d0fbdafc-1bc4-4ff2-b24c-8cb989ae2f04",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -350,7 +341,6 @@
           }
         },
         {
-          "guid": "cb4ab093-e01c-4648-a937-0b9272e9dec0",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -382,7 +372,6 @@
           }
         },
         {
-          "guid": "6c854e0f-5051-40d6-8e38-f2bec5999578",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -414,7 +403,6 @@
           }
         },
         {
-          "guid": "6bed41fb-bcfe-44c4-941a-675e481652e3",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -446,7 +434,6 @@
           }
         },
         {
-          "guid": "c482ee80-f50a-4b64-916c-c6e7a25397ca",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -478,7 +465,6 @@
           }
         },
         {
-          "guid": "623f60c7-b46b-4118-8dbd-f8ed522e815a",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -510,7 +496,6 @@
           }
         },
         {
-          "guid": "59b635d0-2a2c-4099-8565-128bf94b461d",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -542,7 +527,6 @@
           }
         },
         {
-          "guid": "ef24da6a-6469-482a-86e4-d67722247660",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -574,7 +558,6 @@
           }
         },
         {
-          "guid": "2624d783-fbc7-4eeb-985a-7a0ed772a413",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -606,7 +589,6 @@
           }
         },
         {
-          "guid": "9bda1df9-fc83-4db3-afec-744779c02a6a",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -638,7 +620,6 @@
           }
         },
         {
-          "guid": "4ddc741c-52f7-4fc8-a0b4-0b21c49e423b",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -670,7 +651,6 @@
           }
         },
         {
-          "guid": "989075ac-36ea-4ae7-8d9c-ce29f8d9a4cc",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -702,7 +682,6 @@
           }
         },
         {
-          "guid": "de8abbf0-6572-4bd6-aa90-d7b8f8f05cc9",
           "ruleId": "Cross Site Scripting (Reflected)",
           "kind": "fail",
           "level": "error",
@@ -734,7 +713,6 @@
           }
         },
         {
-          "guid": "0b2e59d6-e388-4f0e-b760-153f51666816",
           "ruleId": "HTTP Only Site",
           "kind": "fail",
           "level": "error",
@@ -766,7 +744,6 @@
           }
         },
         {
-          "guid": "ac62943b-6e57-4a92-8f54-5e6ca4cd0bab",
           "ruleId": ".htaccess Information Leak",
           "kind": "fail",
           "level": "error",
@@ -798,7 +775,6 @@
           }
         },
         {
-          "guid": "3b0802c9-22e1-4dba-ae02-534d0f338d7f",
           "ruleId": ".htaccess Information Leak",
           "kind": "fail",
           "level": "error",
@@ -830,7 +806,6 @@
           }
         },
         {
-          "guid": "df6c9db8-8601-4b81-9275-9b74d93ad380",
           "ruleId": ".htaccess Information Leak",
           "kind": "fail",
           "level": "error",
@@ -862,7 +837,6 @@
           }
         },
         {
-          "guid": "70d94727-ad1f-4eb5-b7ff-048a33c2754c",
           "ruleId": ".htaccess Information Leak",
           "kind": "fail",
           "level": "error",
@@ -894,7 +868,6 @@
           }
         },
         {
-          "guid": "a0e787a8-d437-4eb9-ba44-62ad6789b355",
           "ruleId": ".htaccess Information Leak",
           "kind": "fail",
           "level": "error",
@@ -926,7 +899,6 @@
           }
         },
         {
-          "guid": "259ff0cc-f737-4d5d-abce-a318eeb054e9",
           "ruleId": ".htaccess Information Leak",
           "kind": "fail",
           "level": "error",
@@ -958,7 +930,6 @@
           }
         },
         {
-          "guid": "5d750e92-a68a-4166-b3d1-073bddf142c1",
           "ruleId": ".htaccess Information Leak",
           "kind": "fail",
           "level": "error",
@@ -990,7 +961,6 @@
           }
         },
         {
-          "guid": "1dd4e75c-89c5-4de7-89ab-bc4f7e665d08",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1022,7 +992,6 @@
           }
         },
         {
-          "guid": "7452fd7e-3fb5-41f3-bb74-46cb76f836c4",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1054,7 +1023,6 @@
           }
         },
         {
-          "guid": "ac0c5f0c-d3da-4e19-9740-fa68bbb116ac",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1086,7 +1054,6 @@
           }
         },
         {
-          "guid": "bf8e8bee-50b0-47b9-b826-5808b355b450",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1118,7 +1085,6 @@
           }
         },
         {
-          "guid": "3035bbef-3409-415b-b908-e2af571043e1",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1150,7 +1116,6 @@
           }
         },
         {
-          "guid": "69b217b8-6e02-4b2f-b823-480ffa074e1f",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1182,7 +1147,6 @@
           }
         },
         {
-          "guid": "ce7b9c4d-003b-4da9-8fe9-362a640c2cb0",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1214,7 +1178,6 @@
           }
         },
         {
-          "guid": "eb6a455a-8f03-4463-98d4-9bbb444f9e84",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1246,7 +1209,6 @@
           }
         },
         {
-          "guid": "9a76fa1b-c3d4-422f-9982-3570a1276fae",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1278,7 +1240,6 @@
           }
         },
         {
-          "guid": "958d8d15-360c-41e6-a930-171a4d6c8caa",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1310,7 +1271,6 @@
           }
         },
         {
-          "guid": "c42052e9-5f95-4bb1-91ef-acaf43f30e17",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1342,7 +1302,6 @@
           }
         },
         {
-          "guid": "ce855e4f-a950-4cb2-9446-a1c21c0e9a59",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1374,7 +1333,6 @@
           }
         },
         {
-          "guid": "0a5f3073-191a-439b-b1af-cf601fbe46e5",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1406,7 +1364,6 @@
           }
         },
         {
-          "guid": "832b86ab-f192-450b-8164-adf547b00e8a",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1438,7 +1395,6 @@
           }
         },
         {
-          "guid": "524edd1e-657f-4bf5-95c3-f1398ebbc5a1",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1470,7 +1426,6 @@
           }
         },
         {
-          "guid": "feb831ff-9886-4fcf-a063-7358db0f5d32",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
@@ -1502,7 +1457,6 @@
           }
         },
         {
-          "guid": "3e86fde5-ade6-4e35-b7a7-88377e7bd6f9",
           "ruleId": "HTTP Missing Security Headers",
           "kind": "fail",
           "level": "warning",
